@@ -1,0 +1,806 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body,
+html {
+  background-color: rgb(248, 249, 248);
+}
+
+/******* navbar *******/
+
+#nav_bar {
+  background-color: white !important;
+}
+
+#nav_bar a {
+  color: black;
+  transition: all 0.5s ease;
+  margin: 0 10px;
+}
+
+#nav_bar .active {
+  font-weight: bold;
+  color: #f4263e;
+}
+
+#nav_bar a:hover {
+  color: #f4263e;
+}
+
+/******* carousel *******/
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+
+.carousel-inner{
+  position: relative;
+  animation-name: anime_7;
+  animation-duration: 2s;
+}
+
+@keyframes anime_7 {
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+#car_item_1 .carousel-caption{
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: max-content;
+  animation-name: anime_7;
+  animation-duration: 3s;
+}
+
+#car_item_2 .carousel-caption {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: max-content;
+  animation-name: anime_7;
+  animation-duration: 3s;
+}
+
+#car_item_2 h1 {
+  font-weight: bold;
+  color: black;
+}
+
+#car_item_2 h3 {
+  font-weight: bold;
+  color: black;
+}
+
+#car_item_1 .carousel-caption a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 28px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.151);
+  transition: all 0.5s ease;
+  margin-top: 20px;
+}
+
+#car_item_1 .carousel-caption a:hover {
+  color: #f4263e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#car_item_2 .carousel-caption a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 28px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.151);
+  transition: all 0.5s ease;
+  margin-top: 20px;
+}
+
+#car_item_2 .carousel-caption a:hover {
+  color: #f4263e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/******* Teaching and learning tools *******/
+
+#tt_tools {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+}
+
+#tt_tools img {
+  animation-name: anime_1;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime_1 {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+#tt_tools i {
+  font-size: 2.5rem;
+  color: black;
+  margin: 20px;
+}
+
+#tt_tools header {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#tt_tools h5 {
+  font-weight: bold;
+}
+
+#tt_tools header div {
+  margin: 5px 0;
+  padding-top: 10px;
+}
+
+/******* full stack development *******/
+
+#full_stack h6 {
+  line-height: 28px;
+}
+
+#full_stack a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 28px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.151);
+  transition: all 0.5s ease;
+  margin-top: 20px;
+}
+
+#full_stack a:hover {
+  color: #f4263e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#full_stack img {
+  animation-name: anime_2;
+  animation-duration: 3s;
+}
+
+@keyframes anime_2 {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/******* featured courses *******/
+
+#course div {
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
+  transition: all 0.5s ease;
+}
+
+#course div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.3);
+}
+
+#course section {
+  min-height: 120px;
+  margin-bottom: 15px;
+}
+
+#star-rating {
+  height: 30px;
+  width: max-content;
+}
+
+#star-rating i {
+  font-size: 15px;
+  color: #ffdc12;
+}
+
+#course a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.151);
+  transition: all 0.5s ease;
+}
+
+#course a:hover {
+  color: #f4263e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/******* highlight *******/
+
+#highlight {
+  box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
+  border-radius: 10px;
+  background-color: white;
+}
+
+#highlight li {
+  margin: 12px 0;
+  padding: 0 40px;
+  list-style: none;
+  background-image: url("img/circle-check-solid.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 22px;
+}
+
+/******* review *******/
+
+#review {
+  background-color: rgb(248, 251, 255);
+  border-radius: 15px !important;
+  border: 0.5px solid rgba(128, 128, 128, 0.2);
+  box-shadow: 5px 5px 10px lightcyan;
+}
+
+#main_review {
+  background-color: rgb(249, 223, 229);
+}
+
+#review_carousel .carousel-item {
+  color: #999;
+  overflow: hidden;
+  min-height: 120px;
+  font-size: 13px;
+}
+#review_carousel .media {
+  position: relative;
+  padding: 0 0 0 20px;
+}
+
+#review_carousel .media-body {
+  margin: 0;
+  width: fit-content;
+  float: right;
+}
+
+#review_carousel .media img {
+  width: 75px;
+  height: 75px;
+  display: inline;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+#review_carousel .testimonial-wrapper {
+  padding: 0 10px;
+}
+#review_carousel .testimonial {
+  width: 80%;
+  margin: auto;
+  color: black;
+  position: relative;
+  padding: 15px;
+  background: #f1f1f1;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.445);
+}
+
+#review_carousel .testimonial::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: #f1f1f1;
+  border: 1px solid #efefef;
+  border-width: 0 0 1px 1px;
+  position: absolute;
+  bottom: -8px;
+  left: 46px;
+  transform: rotateZ(-46deg);
+}
+
+#review_carousel .star-rating i {
+  font-size: 16px;
+  color: #ffdc12;
+}
+#review_carousel .overview {
+  padding: 3px 0 0 25px;
+}
+#review_carousel .overview .details {
+  padding: 5px 0 8px;
+}
+
+#review_carousel .overview b {
+  text-transform: uppercase;
+  color: black;
+}
+
+#review_bg{
+    background-image: url(img/quote.png);
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    
+}
+
+#review img{
+    animation-name: anime_5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+  
+@keyframes anime_5{
+    0% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+}
+  
+
+
+
+/* counter */
+
+#counter {
+  background-color: rgba(173, 216, 230, 0.2);
+}
+
+#counter section h1 {
+  color: #f4263e;
+  font-weight: bold;
+}
+
+#counter section h6 {
+  font-weight: bold;
+}
+
+/* teachers */
+
+#teacher {
+  border-radius: 10px;
+  border: 0.5px solid rgba(128, 128, 128, 0.267);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+#carouselExampleCaptions2 img {
+  border-radius: 50%;
+  width: 80px;
+}
+
+#carouselExampleCaptions2 p {
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+
+/* faq */
+
+.faq {
+  border-radius: 20px !important;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(173, 216, 230, 0.514);
+  background-color: white;
+}
+
+.faq .accordion-button {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: #f4263e;
+  font-weight: bold;
+}
+
+.faq .accordion-body {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+  background-image: url(img/after-eject-solid.svg) !important;
+  background-size: 1rem;
+}
+
+.faq .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url(img/eject-solid.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  box-shadow: none !important;
+}
+
+.faq_1 {
+  animation-name: anime_3;
+  animation-duration: 3s;
+}
+
+@keyframes anime_3 {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.faq_2 {
+  animation-name: anime_4;
+  animation-duration: 3s;
+}
+
+@keyframes anime_4 {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* demo */
+
+#demo {
+  background-color: rgba(119, 136, 153, 0.219);
+}
+
+#demo a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.151);
+  transition: all 0.5s ease;
+}
+
+#demo a:hover {
+  color: #f4263e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* footer */
+
+.foo_ter h6 {
+  margin-bottom: 15px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.foo_ter p {
+  line-height: 25px;
+}
+
+.foo_ter h6:hover {
+  color: #f4263e;
+  font-weight: bold;
+  transform: translateY(-8px);
+}
+
+.foo_ter a {
+  text-decoration: none;
+  color: black;
+}
+
+.foo_ter a:hover{
+  color: #f4263e;
+}
+
+.foo_ter i {
+  border-radius: 50%;
+  font-size: 1.2rem;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.foo_ter i:hover {
+  color: #f4263e;
+  transform: rotateY(360deg);
+}
+
+/***************************************** Contact *******************************/
+
+/* details */
+
+#con_detail i {
+  font-size: 2rem;
+}
+
+#con_detail span {
+  color: #f4263e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  line-height: 50px;
+}
+
+/* map */
+
+#con_map iframe {
+  border-radius: 20px;
+  filter: grayscale(100%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+/* form */
+
+#con_form input {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border-radius: 10px;
+}
+
+#con_form input::placeholder {
+  padding: 20px;
+}
+
+#con_form textarea {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border-radius: 10px;
+  border-style: none;
+  border: 0.5px solid rgba(128, 128, 128, 0.363);
+}
+
+#con_form textarea::placeholder {
+  padding-left: 20px;
+}
+
+#con_form a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 28px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.151);
+  transition: all 0.5s ease;
+  border: 0.5px solid rgba(128, 128, 128, 0.4);
+}
+
+#con_form a:hover {
+  color: #f4263e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/************************** courses ******************************/
+
+#category div {
+  border-radius: 15px;
+  border: 0.5px solid rgba(128, 128, 128, 0.2);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+#category div:hover {
+  background-color: white;
+  color: #f4263e;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#category div img {
+  transition: all 1s ease;
+}
+
+#category div:hover img {
+  transform: rotateY(180deg);
+}
+
+#category div a {
+  text-decoration: none;
+  background-color: #e7e7e7;
+  padding: 8px 20px;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+#course_banner a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 28px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.151);
+  transition: all 0.5s ease;
+  border: 0.5px solid rgba(128, 128, 128, 0.4);
+}
+
+#course_banner{
+  border-radius: 15px;
+  border: .5px solid rgba(128, 128, 128, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+#course_banner a:hover{
+  color: #f4263e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#course_banner img{
+  animation-name: anime_8;
+  animation-duration: 2s;
+}
+
+@keyframes anime_8{
+  0%{
+    transform: translateY(-400px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+#course_banner div{
+  animation-name: anime_9;
+  animation-duration: 2s;
+}
+
+@keyframes anime_9{
+  0%{
+    transform: translateY(400px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+/**************************** about ****************************/
+
+.edu_every h6 {
+  color: #f4263e;
+  font-size: 0.8rem;
+}
+
+.edu_every div {
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.178);
+  transition: all 0.5s ease;
+}
+
+.edu_every div:hover {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+}
+
+.edu_every div:hover i {
+  transform: scale(1.25);
+}
+
+.edu_every div:hover a {
+  color: #f4263e;
+}
+
+.edu_every i {
+  margin: 30px;
+  font-size: 2.5rem;
+  transition: all 0.5s ease;
+}
+
+.edu_every p {
+  color: grey;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+
+.edu_every a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+/* our success */
+
+#glory_succ {
+  border-radius: 20px;
+  border: 0.5px solid rgba(128, 128, 128, 0.226);
+  box-shadow: 4px 4px 10px rgba(144, 238, 144, 0.562);
+}
+
+#glory_succ h6 {
+  color: #f4263e;
+  font-size: 0.8rem;
+}
+
+#glory_succ p {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+/* subscribe */
+
+#subscribe a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.151);
+  transition: all 0.5s ease;
+}
+
+#subscribe a:hover {
+  color: #f4263e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#subscribe input {
+  padding: 15px 0;
+  border-radius: 10px;
+}
+
+#subscribe input::placeholder {
+  padding-left: 20px;
+}
+
+
+/**************** Blog ***************/
+
+#blog_video video{
+  border-radius: 20px;
+}
+
+
+
+
+
+

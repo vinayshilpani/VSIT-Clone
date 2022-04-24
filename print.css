@@ -1,0 +1,47 @@
+@media screen and (max-width: 400px) {
+
+    #car_item_1 .carousel-caption{
+        top: -5%;
+        left: 25%;
+    }
+
+    #car_item_1 h1{
+        font-size: 1rem;
+    }
+
+    #car_item_1 h3{
+        font-size: .8rem;
+        position: relative;
+        top: -20px;
+    }
+
+    #car_item_1 a{
+        margin: 0 !important;
+        padding: 0;
+        position: relative;
+        top: -30px;
+        font-size: .8rem;
+    }
+    #car_item_2 .carousel-caption{
+        top: -5%;
+        left: 10%;
+    }
+
+    #car_item_2 h1{
+        font-size: 1rem;
+    }
+
+    #car_item_2 h3{
+        font-size: .8rem;
+        position: relative;
+        top: -20px;
+    }
+
+    #car_item_2 a{
+        margin: 0 !important;
+        padding: 0;
+        position: relative;
+        top: -30px;
+        font-size: .8rem;
+    }
+}
